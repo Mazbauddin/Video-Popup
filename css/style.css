@@ -1,0 +1,123 @@
+
+/*============================
+        Video Play Button
+===============================*/
+.video-app, .video-app-1 {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    display: block;
+    height: 100vh;
+}
+.overlay-1{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(150deg, rgba(40, 20, 131, 0.76) 15%, rgba(143, 110, 213, 0.89) 70%, rgba(215, 130, 217, 0.74) 94%);
+    padding-top: 200px;
+}
+.overlay {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(150deg, rgba(40, 20, 131, 0.76) 15%, rgba(143, 110, 213, 0.89) 70%, rgba(215, 130, 217, 0.74) 94%);
+    padding: 200px 0;
+}
+.overlay-1 img{
+    width: 100%;
+}
+.video-app:before{
+    border-right: 50vw solid #fff;
+    border-top: 160px solid transparent;
+    bottom: 0;
+    content: "";
+    height: 0;
+    position: absolute;
+    right: 0;
+    width: 0;
+    z-index: 1;
+}
+.video-app:after{
+    border-left: 50vw solid #fff;
+    border-top: 160px solid transparent;
+    bottom: 0;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+    z-index: 1;
+}
+.video-play-button a{
+    position: relative;
+    z-index: 2;
+    color: #281483;
+    height: 70px;
+    width: 70px;
+    line-height: 65px;
+    text-align: center;
+    margin: auto;
+    border-radius: 50%;
+    display: block;
+    -webkit-animation: ripple-white 1s linear infinite;
+    animation: ripple-white 1s linear infinite;
+    -webkit-transition: .5s linear;
+    background: #fff;
+}
+.video-play-button a:hover{
+    background: #e22b43;
+    color: #fff;
+}
+.video-play-button a:hover span{
+    color: #fff;
+}
+.video-play-button a span{
+    font-size: 40px;
+    color: #a294e2;
+    text-align: center;
+    vertical-align: middle;
+}
+/*circle wave video attached*/
+@-webkit-keyframes ripple {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(0, 163, 204, .1), 0 0 0 20px rgba(0, 163, 204, .1), 0 0 0 40px rgba(0, 163, 204, .1);
+        box-shadow: 0 0 0 0 rgba(0, 163, 204, .1), 0 0 0 20px rgba(0, 163, 204, .1), 0 0 0 40px rgba(0, 163, 204, .1)
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 20px rgba(0, 163, 204, .1), 0 0 0 40px rgba(0, 163, 204, .1), 0 0 0 60px rgba(0, 163, 204, 0);
+        box-shadow: 0 0 0 20px rgba(0, 163, 204, .1), 0 0 0 40px rgba(0, 163, 204, .1), 0 0 0 60px rgba(0, 163, 204, 0)
+    }
+}
+
+@keyframes ripple {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(0, 163, 204, .1), 0 0 0 20px rgba(0, 163, 204, .1), 0 0 0 40px rgba(0, 163, 204, .1);
+        box-shadow: 0 0 0 0 rgba(0, 163, 204, .1), 0 0 0 20px rgba(0, 163, 204, .1), 0 0 0 40px rgba(0, 163, 204, .1)
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 20px rgba(0, 163, 204, .1), 0 0 0 40px rgba(0, 163, 204, .1), 0 0 0 60px rgba(0, 163, 204, 0);
+        box-shadow: 0 0 0 20px rgba(0, 163, 204, .1), 0 0 0 40px rgba(0, 163, 204, .1), 0 0 0 60px rgba(0, 163, 204, 0)
+    }
+}
+
+
+@-webkit-keyframes ripple-white {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1)
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0);
+        box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0)
+    }
+}
+
+@keyframes ripple-white {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1)
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0);
+        box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0)
+    }
+}
+
